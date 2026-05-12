@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: fastapi-app
-  namespace: farm
+  namespace: farm2
   labels:
     app: fastapi-app
 spec:

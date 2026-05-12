@@ -2,7 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: fastapi-ingress
-  namespace: farm
+  namespace: farm2
   labels:
     app.kubernetes.io/name: fastapi-ingress
 spec:
@@ -12,7 +12,7 @@ spec:
     http:
       paths:
       - pathType: Prefix
-        path: /fastapi
+        path: /fastapi2
         backend:
           service:
             name: fastapi-app
